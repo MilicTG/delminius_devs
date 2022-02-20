@@ -8,6 +8,7 @@ module.exports = {
         },
         primary_blue: {
           100: "#00B0CC",
+          200: "#0097af",
         },
         primary_gray: {
           100: "#DADADA",
