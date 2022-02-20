@@ -31,7 +31,7 @@ const LandingText = tw.h1`
    px-4
    text-4xl
    text-center
-   font-medium
+   font-bold
    text-gray-700
    md:my-16
    xl:text-6xl
