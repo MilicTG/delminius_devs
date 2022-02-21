@@ -15,7 +15,7 @@ const LandingContainer = tw.section`
    xl:flex-row
 `;
 
-const LandingImageConatiner = tw.div`
+const LandingImageContainer = tw.div`
    px-4
    w-full
 `;
@@ -40,12 +40,12 @@ const LandingText = tw.h1`
 
 const ButtonContainer = tw.div`
    w-full
+   px-4
    flex
    flex-col
    items-center
    xl:mt-16
    xl:flex-row
-   xl:px-4
 `;
 
 const ButtonSpacer = tw.div`
@@ -59,7 +59,7 @@ function Landing() {
     <LandingContainer>
       <LandingTextAndButtonContainer>
         <LandingText>
-          DelminiusDevs, a mobile and web development agency
+          DelminiusDevs, mobile and web development agency
         </LandingText>
         <ButtonContainer>
           <ButtonFull text="Contact Us" />
@@ -67,9 +67,9 @@ function Landing() {
           <ButtonSecondary text="Our Work" />
         </ButtonContainer>
       </LandingTextAndButtonContainer>
-      <LandingImageConatiner>
+      <LandingImageContainer>
         <img style={{ height: "100%" }} src={landingImg} alt="Logo" />
-      </LandingImageConatiner>
+      </LandingImageContainer>
     </LandingContainer>
   );
 }
