@@ -12,13 +12,13 @@ const TitleSectionTitle = tw.h3`
    w-48
    text-3xl
    font-medium
-   text-gray-700
+   text-white
    pb-2
    border-b
-   border-primary_blue-100
+   border-white
 `;
 
-function TitleSection({ title }) {
+function TitleSectionSecondary({ title }) {
   return (
     <TitleSectionContainer>
       <TitleSectionTitle>{title}</TitleSectionTitle>
@@ -26,4 +26,4 @@ function TitleSection({ title }) {
   );
 }
 
-export default TitleSection;
+export default TitleSectionSecondary;

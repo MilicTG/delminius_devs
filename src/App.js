@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import AboutUs from "./containers/about";
 import Landing from "./containers/landing";
 
 import NavBar from "./containers/nav_bar";
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Landing />
       <ServicesSection />
+      <AboutUs />
     </AppContainer>
   );
 }
