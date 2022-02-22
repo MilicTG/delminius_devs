@@ -12,6 +12,7 @@ const PortfolioContainer = tw.section`
    flex-col
    pt-20
    pb-10
+   lg:py-16
 `;
 
 const PortfolioContent = tw.div`
@@ -22,7 +23,7 @@ const PortfolioContent = tw.div`
 
 const PortfolioCardsWrapper = tw.div`
    w-full
-   mt-8
+   mt-16
    mb-16
    grid
    grid-rows-3

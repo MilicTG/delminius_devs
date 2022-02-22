@@ -3,11 +3,12 @@ import tw from "twin.macro";
 
 const CardContainer = tw.div`
    w-full
-   my-4
+   my-6
+   py-8
    flex
    flex-col
    items-center
-   bg-gray-50
+   bg-blue-50
    rounded-md
    shadow-lg
 `;

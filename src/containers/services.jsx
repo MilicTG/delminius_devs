@@ -24,6 +24,7 @@ const ServicesContainer = tw.section`
    flex
    flex-col
    items-center
+   lg:py-16
 `;
 
 const CardContainer = tw.div`
@@ -31,7 +32,7 @@ const CardContainer = tw.div`
   grid
   grid-cols-1
   grid-rows-4
-  my-4
+  my-6
   gap-8
   md:grid-cols-2
   md:grid-rows-2

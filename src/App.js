@@ -1,8 +1,9 @@
 import React from "react";
 import tw from "twin.macro";
-import AboutUs from "./containers/about";
-import Landing from "./containers/landing";
 
+import AboutUs from "./containers/about";
+import ContactUs from "./containers/contact";
+import Landing from "./containers/landing";
 import NavBar from "./containers/nav_bar";
 import Portfolio from "./containers/portfolio";
 import ServicesSection from "./containers/services";
@@ -17,6 +18,7 @@ function App() {
       <ServicesSection />
       <AboutUs />
       <Portfolio />
+      <ContactUs />
     </AppContainer>
   );
 }
