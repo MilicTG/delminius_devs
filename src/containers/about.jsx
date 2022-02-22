@@ -36,7 +36,8 @@ const AboutUsContentContainer = tw.div`
 const AboutUsTextContainer = tw.div`
    flex
    flex-col
-   w-7/12	
+   w-full
+   lg:w-7/12	
 `;
 
 const AboutUsText = tw.h4`
