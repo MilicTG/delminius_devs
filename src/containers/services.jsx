@@ -1,5 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
+import { Element } from "react-scroll";
 
 import { FaAndroid, FaReact } from "react-icons/fa";
 import {
@@ -17,7 +18,7 @@ import {
   cardMaintenanceDevText,
 } from "../data/services_card_text.js";
 
-const ServicesContainer = tw.section`
+const ServicesContainer = tw(Element)`
    container
    px-4
    my-8
@@ -42,7 +43,7 @@ const CardContainer = tw.div`
 
 function ServicesSection() {
   return (
-    <ServicesContainer>
+    <ServicesContainer name="Services">
       <TitleSection title="Our Services" />
       <CardContainer>
         <ServicesCard

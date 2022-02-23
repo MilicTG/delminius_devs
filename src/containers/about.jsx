@@ -1,10 +1,11 @@
 import React from "react";
 import tw from "twin.macro";
 import TitleSectionSecondary from "../components/title_section_secondary";
+import { Element } from "react-scroll";
 
 import aboutSvg from "../assets/svg_about.svg";
 
-const AboutUsContainer = tw.section`
+const AboutUsContainer = tw(Element)`
    w-full
    my-2
    px-4
@@ -57,7 +58,7 @@ const AboutUsSvg = tw.div`
 
 function AboutUs() {
   return (
-    <AboutUsContainer>
+    <AboutUsContainer name="About">
       <AboutUsContentWrapper>
         <TitleSectionSecondary title="About Us" />
         <AboutUsContentContainer>

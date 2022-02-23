@@ -1,12 +1,13 @@
 import React from "react";
 import tw from "twin.macro";
 import TitleSection from "../components/title_section";
+import { Element } from "react-scroll";
 
 import radio_tg_img from "../assets/img_portfolio_rtg.jpg";
 import radio_tg_app_img from "../assets/img_portfolio_rtg_app.jpg";
 import elektra_img from "../assets/img_portfolio_elektra.jpg";
 
-const PortfolioContainer = tw.section`
+const PortfolioContainer = tw(Element)`
    container
    flex
    flex-col
@@ -73,7 +74,7 @@ const navigateToPlayStoreRTG = () =>
 
 function Portfolio() {
   return (
-    <PortfolioContainer>
+    <PortfolioContainer name="Projects">
       <PortfolioContent>
         <TitleSection title="Our Work" />
 

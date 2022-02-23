@@ -1,11 +1,12 @@
 import React from "react";
 import tw from "twin.macro";
+import { Element, scroller } from "react-scroll";
 
 import landingImg from "../assets/svg_development.svg";
 import ButtonFull from "../components/btn_primary";
 import ButtonSecondary from "../components/btn_secondary";
 
-const LandingContainer = tw.section`
+const LandingContainer = tw(Element)`
    container
    flex
    flex-col-reverse
@@ -54,17 +55,33 @@ const ButtonSpacer = tw.div`
    xl:w-8
 `;
 
+const scrollToContact = () => {
+  scroller.scrollTo("Contact", {
+    smooth: "easeInOutQuad",
+    duration: 1500,
+    offset: -70,
+  });
+};
+
+const scrollToPortfolio = () => {
+  scroller.scrollTo("Projects", {
+    smooth: "easeInOutQuad",
+    duration: 1500,
+    offset: -70,
+  });
+};
+
 function Landing() {
   return (
-    <LandingContainer>
+    <LandingContainer name="Home">
       <LandingTextAndButtonContainer>
         <LandingText>
           DelminiusDevs, mobile and web development agency
         </LandingText>
         <ButtonContainer>
-          <ButtonFull text="Contact Us" />
+          <ButtonFull text="Contact Us" onClick={scrollToContact} />
           <ButtonSpacer />
-          <ButtonSecondary text="Our Work" />
+          <ButtonSecondary text="Our Work" onClick={scrollToPortfolio} />
         </ButtonContainer>
       </LandingTextAndButtonContainer>
       <LandingImageContainer>

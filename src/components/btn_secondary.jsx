@@ -18,8 +18,8 @@ const BtnContainer = tw.button`
    xl:w-72
 `;
 
-function ButtonSecondary({ text }) {
-  return <BtnContainer>{text}</BtnContainer>;
+function ButtonSecondary({ text, onClick }) {
+  return <BtnContainer onClick={onClick}>{text}</BtnContainer>;
 }
 
 export default ButtonSecondary;

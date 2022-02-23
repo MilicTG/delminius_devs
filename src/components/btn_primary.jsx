@@ -14,8 +14,8 @@ const BtnContainer = tw.button`
    xl:w-72
 `;
 
-function ButtonFull({ text }) {
-  return <BtnContainer>{text}</BtnContainer>;
+function ButtonFull({ text, onClick }) {
+  return <BtnContainer onClick={onClick}>{text}</BtnContainer>;
 }
 
 export default ButtonFull;

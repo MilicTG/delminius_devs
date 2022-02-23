@@ -1,11 +1,12 @@
 import React from "react";
 import tw from "twin.macro";
 import TitleSectionSecondary from "../components/title_section_secondary";
+import { Element } from "react-scroll";
 
 import contactSvg from "../assets/svg_contatc.svg";
 import ButtonContact from "../components/btn_contact";
 
-const ContactContainer = tw.section`
+const ContactContainer = tw(Element)`
    w-full
    my-2
    px-4
@@ -21,7 +22,6 @@ const ContactWrapper = tw.div`
    flex
    flex-col
    py-8
-   mx-4
 `;
 
 const ContactComponentWrapper = tw.div`
@@ -62,7 +62,7 @@ const SmallForm = tw.input`
   w-full
   bg-white
   px-4
-  py-3
+  py-5
   block
   shadow 
   appearance-none 
@@ -77,11 +77,11 @@ const SmallForm = tw.input`
 
 const LargeForm = tw.textarea`
   w-full
-  h-24
+  h-32
   my-4
   bg-white
   px-4
-  py-3
+  py-5
   block
   shadow 
   appearance-none 
@@ -96,7 +96,7 @@ const LargeForm = tw.textarea`
 
 function ContactUs() {
   return (
-    <ContactContainer>
+    <ContactContainer name="Contact">
       <ContactWrapper>
         <TitleSectionSecondary title="Contact Us" />
 

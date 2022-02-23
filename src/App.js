@@ -3,6 +3,7 @@ import tw from "twin.macro";
 
 import AboutUs from "./containers/about";
 import ContactUs from "./containers/contact";
+import Footer from "./containers/footer";
 import Landing from "./containers/landing";
 import NavBar from "./containers/nav_bar";
 import Portfolio from "./containers/portfolio";
@@ -19,6 +20,7 @@ function App() {
       <AboutUs />
       <Portfolio />
       <ContactUs />
+      <Footer />
     </AppContainer>
   );
 }
