@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Axios, app } from "../firebase/firebaseConfig";
 import tw from "twin.macro";
 import TitleSectionSecondary from "../components/title_section_secondary";
 import { Element } from "react-scroll";
@@ -95,6 +96,40 @@ const LargeForm = tw.textarea`
 `;
 
 function ContactUs() {
+  const [formData, setFormData] = useState({});
+
+  const updateInput = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    sendEmail();
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
+  const sendEmail = () => {
+    Axios.post("https://delminiusdevs.cloudfunctions.net/submit", formData)
+      .then((res) => {
+        app.collection("emails").add({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          time: new Date(),
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <ContactContainer name="Contact">
       <ContactWrapper>
@@ -107,6 +142,9 @@ function ContactUs() {
           <ContactFormWrapper>
             <ContactSmallInputWrapper>
               <SmallForm
+                onSubmit={handleSubmit}
+                onChange={updateInput}
+                value={formData.name || ""}
                 typeof="text"
                 id="name"
                 type="text"
@@ -119,6 +157,8 @@ function ContactUs() {
                 placeholder="Last name:"
               />
               <SmallForm
+                onChange={updateInput}
+                value={formData.email || ""}
                 typeof="text"
                 id="email"
                 type="text"
@@ -132,11 +172,18 @@ function ContactUs() {
               />
             </ContactSmallInputWrapper>
             <LargeForm
+              onChange={updateInput}
+              value={formData.message || ""}
               typeof="text"
               id="message"
               placeholder="Enter your message:"
             />
-            <ButtonContact text="Send" onClick={() => {}} />
+            <ButtonContact
+              text="Send"
+              onClick={() => {
+                handleSubmit();
+              }}
+            />
           </ContactFormWrapper>
         </ContactComponentWrapper>
       </ContactWrapper>
