@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAnalytics, logEvent } from "firebase/analytics";
 import "firebase/auth";
 import "firebase/database";
 import "firebase/firestore";
@@ -16,5 +16,7 @@ let config = {
 
 const app = initializeApp(config);
 const analytics = getAnalytics(app);
+
+logEvent(analytics, "site_wisited");
 
 export { app };
