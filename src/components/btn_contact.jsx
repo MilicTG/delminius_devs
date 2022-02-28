@@ -16,8 +16,8 @@ const BtnContainer = tw.button`
    xl:w-72
 `;
 
-function ButtonContact({ text }) {
-  return <BtnContainer>{text}</BtnContainer>;
+function ButtonContact({ text, onClick }) {
+  return <BtnContainer onClick={onClick}>{text}</BtnContainer>;
 }
 
 export default ButtonContact;

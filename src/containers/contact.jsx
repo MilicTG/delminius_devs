@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Axios, app } from "../firebase/firebaseConfig";
+import { app } from "../firebase/firebaseConfig";
 import tw from "twin.macro";
 import TitleSectionSecondary from "../components/title_section_secondary";
 import { Element } from "react-scroll";
+import Axios from "axios";
 
 import contactSvg from "../assets/svg_contatc.svg";
 import ButtonContact from "../components/btn_contact";
@@ -35,7 +36,7 @@ const ContactComponentWrapper = tw.div`
   md:flex-row
 `;
 
-const ContactFormWrapper = tw.div`
+const ContactFormWrapper = tw.form`
   w-full
   flex
   flex-col
@@ -98,10 +99,24 @@ const LargeForm = tw.textarea`
 function ContactUs() {
   const [formData, setFormData] = useState({});
 
-  const updateInput = (e) => {
+  const updateInputName = (e) => {
     setFormData({
+      name: e.target.value,
       ...formData,
-      [e.target.name]: e.target.value,
+    });
+  };
+
+  const updateInputEmail = (e) => {
+    setFormData({
+      email: e.target.value,
+      ...formData,
+    });
+  };
+
+  const updateInputMessage = (e) => {
+    setFormData({
+      message: e.target.value,
+      ...formData,
     });
   };
 
@@ -139,11 +154,10 @@ function ContactUs() {
           <ContactSvg>
             <img style={{ height: "100%" }} src={contactSvg} alt="Contact" />
           </ContactSvg>
-          <ContactFormWrapper>
+          <ContactFormWrapper onSubmit={handleSubmit}>
             <ContactSmallInputWrapper>
               <SmallForm
-                onSubmit={handleSubmit}
-                onChange={updateInput}
+                onChange={updateInputName}
                 value={formData.name || ""}
                 typeof="text"
                 id="name"
@@ -157,7 +171,7 @@ function ContactUs() {
                 placeholder="Last name:"
               />
               <SmallForm
-                onChange={updateInput}
+                onChange={updateInputEmail}
                 value={formData.email || ""}
                 typeof="text"
                 id="email"
@@ -172,7 +186,7 @@ function ContactUs() {
               />
             </ContactSmallInputWrapper>
             <LargeForm
-              onChange={updateInput}
+              onChange={updateInputMessage}
               value={formData.message || ""}
               typeof="text"
               id="message"
@@ -180,8 +194,8 @@ function ContactUs() {
             />
             <ButtonContact
               text="Send"
-              onClick={() => {
-                handleSubmit();
+              onClick={(event) => {
+                handleSubmit(event);
               }}
             />
           </ContactFormWrapper>

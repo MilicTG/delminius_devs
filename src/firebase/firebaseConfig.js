@@ -3,7 +3,6 @@ import { getAnalytics } from "firebase/analytics";
 import "firebase/auth";
 import "firebase/database";
 import "firebase/firestore";
-import Axios from "axios";
 
 let config = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
@@ -18,4 +17,4 @@ let config = {
 const app = initializeApp(config);
 const analytics = getAnalytics(app);
 
-export { Axios, app };
+export { app };
