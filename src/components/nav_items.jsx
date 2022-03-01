@@ -92,9 +92,17 @@ const NavItem = tw.li`
     box-content
 `;
 
+const LanguageButton = tw.button`
+  pl-3
+  text-gray-700
+  transition-colors
+  transition-duration[300ms]
+  hover:text-primary_blue-100
+  `;
+
 const lngs = {
-  en: { nativeName: "English" },
-  hr: { nativeName: "Hrvatski" },
+  en: { nativeName: "En" },
+  hr: { nativeName: "Hr" },
 };
 
 function NavItems() {
@@ -176,7 +184,7 @@ function NavItems() {
       </NavItem>
       <NavItem>
         {Object.keys(lngs).map((lng) => (
-          <button
+          <LanguageButton
             key={lng}
             style={{
               fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
@@ -185,7 +193,7 @@ function NavItems() {
             onClick={() => i18n.changeLanguage(lng)}
           >
             {lngs[lng].nativeName}
-          </button>
+          </LanguageButton>
         ))}
       </NavItem>
     </NavItemsWrapper>

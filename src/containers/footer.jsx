@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import { Link, scroller } from "react-scroll";
 import ButtonSecondary from "../components/btn_secondary";
+import { useTranslation } from "react-i18next";
 
 import { FiInstagram, FiMail } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa";
@@ -170,6 +171,8 @@ const navigateToLinkedin = () =>
     "https://www.linkedin.com/in/ivan-mili%C4%87-1443024b/");
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <FooterContainer>
       <FooterLogoWrapper>
@@ -183,19 +186,19 @@ function Footer() {
 
       <FooterNavItems>
         <FooterNavItem>
-          <Link to="Home">Home</Link>
+          <Link to="Home">{t("nav.home")}</Link>
         </FooterNavItem>
         <FooterNavItem>
-          <Link to="Services">Services</Link>
+          <Link to="Services">{t("nav.services")}</Link>
         </FooterNavItem>
         <FooterNavItem>
-          <Link to="About">About Us</Link>
+          <Link to="About">{t("nav.about")}</Link>
         </FooterNavItem>
         <FooterNavItem>
-          <Link to="Projects">Projects</Link>
+          <Link to="Projects">{t("nav.projects")}</Link>
         </FooterNavItem>
         <FooterNavItem>
-          <Link to="Contact">Contact</Link>
+          <Link to="Contact">{t("nav.contact")}</Link>
         </FooterNavItem>
       </FooterNavItems>
 
@@ -203,16 +206,22 @@ function Footer() {
         <FooterContactAndSocialTitle>Our Office</FooterContactAndSocialTitle>
 
         <ContactItems>
-          <ContactItem>Adress: Virgilija Nevjestica 15</ContactItem>
-          <ContactItem>City and Postal: Tomislavgrad, 80240</ContactItem>
-          <ContactItem>Country: Bosnia and Herzegovina</ContactItem>
-          <ContactItem>E-mail: delminiusdevs@gmail.com</ContactItem>
+          <ContactItem>{t("footer.adress")}</ContactItem>
+          <ContactItem>{t("footer.city")}</ContactItem>
+          <ContactItem>{t("footer.country")}</ContactItem>
+          <ContactItem>{t("footer.email")}</ContactItem>
+          <ContactItem>{t("footer.phone")}</ContactItem>
         </ContactItems>
-        <ButtonSecondary text="Contact Us" onClick={scrollToContact} />
+        <ButtonSecondary
+          text={t("landing.buttonOne")}
+          onClick={scrollToContact}
+        />
       </FooterContactContainer>
 
       <SocialWrapper>
-        <FooterContactAndSocialTitle>Social Media</FooterContactAndSocialTitle>
+        <FooterContactAndSocialTitle>
+          {t("footer.social")}
+        </FooterContactAndSocialTitle>
         <SocialIconsWrapper>
           <FiInstagram
             className="transition-duration[300ms] mr-2 cursor-pointer text-3xl text-gray-500 transition-colors hover:text-gray-200"
@@ -233,7 +242,7 @@ function Footer() {
         </SocialIconsWrapper>
       </SocialWrapper>
       <FooterRightsText>
-        &copy; {new Date().getFullYear()} delminiusDevs. All rights reserved.
+        &copy; {new Date().getFullYear()} {t("footer.rights")}
       </FooterRightsText>
     </FooterContainer>
   );

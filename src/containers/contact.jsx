@@ -5,6 +5,7 @@ import tw from "twin.macro";
 import TitleSectionSecondary from "../components/title_section_secondary";
 import { Element } from "react-scroll";
 import Axios from "axios";
+import { useTranslation } from "react-i18next";
 
 import contactSvg from "../assets/svg_contatc.svg";
 import ButtonContact from "../components/btn_contact";
@@ -99,6 +100,7 @@ const LargeForm = tw.textarea`
 
 function ContactUs() {
   const [formData, setFormData] = useState({});
+  const { t } = useTranslation();
 
   const updateInput = (e) => {
     setFormData({
@@ -143,7 +145,7 @@ function ContactUs() {
   return (
     <ContactContainer name="Contact">
       <ContactWrapper>
-        <TitleSectionSecondary title="Contact Us" />
+        <TitleSectionSecondary title={t("contact.title")} />
 
         <ContactComponentWrapper>
           <ContactSvg>
@@ -158,7 +160,7 @@ function ContactUs() {
                 typeof="text"
                 id="name"
                 type="text"
-                placeholder="First Name:"
+                placeholder={t("contact.first")}
               />
               <SmallForm
                 onChange={updateInput}
@@ -167,7 +169,7 @@ function ContactUs() {
                 typeof="text"
                 id="name"
                 type="text"
-                placeholder="Last name:"
+                placeholder={t("contact.last")}
               />
               <SmallForm
                 onChange={updateInput}
@@ -176,7 +178,7 @@ function ContactUs() {
                 typeof="text"
                 id="email"
                 type="text"
-                placeholder="E-mail:"
+                placeholder={t("contact.email")}
               />
               <SmallForm
                 onChange={updateInput}
@@ -185,7 +187,7 @@ function ContactUs() {
                 typeof="text"
                 id="phone"
                 type="text"
-                placeholder="Phone or Skype ID:"
+                placeholder={t("contact.phone")}
               />
             </ContactSmallInputWrapper>
             <LargeForm
@@ -194,10 +196,10 @@ function ContactUs() {
               value={formData.message || ""}
               typeof="text"
               id="message"
-              placeholder="Enter your message:"
+              placeholder={t("contact.message")}
             />
             <ButtonContact
-              text="Send"
+              text={t("contact.send")}
               type="submit"
               onClick={(event) => {
                 handleSubmit(event);
