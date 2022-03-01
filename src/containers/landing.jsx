@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import { Element, scroller } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 import landingImg from "../assets/svg_development.svg";
 import ButtonFull from "../components/btn_primary";
@@ -28,6 +29,7 @@ const LandingTextAndButtonContainer = tw.div`
 `;
 
 const LandingText = tw.h1`
+   whitespace-pre-wrap
    my-8
    px-4
    text-4xl
@@ -72,16 +74,19 @@ const scrollToPortfolio = () => {
 };
 
 function Landing() {
+  const { t } = useTranslation();
+
   return (
     <LandingContainer name="Home">
       <LandingTextAndButtonContainer>
-        <LandingText>
-          DelminiusDevs, mobile and web development agency
-        </LandingText>
+        <LandingText>{t("landing.title")}</LandingText>
         <ButtonContainer>
-          <ButtonFull text="Contact Us" onClick={scrollToContact} />
+          <ButtonFull text={t("landing.buttonOne")} onClick={scrollToContact} />
           <ButtonSpacer />
-          <ButtonSecondary text="Our Work" onClick={scrollToPortfolio} />
+          <ButtonSecondary
+            text={t("landing.buttonTwo")}
+            onClick={scrollToPortfolio}
+          />
         </ButtonContainer>
       </LandingTextAndButtonContainer>
       <LandingImageContainer>

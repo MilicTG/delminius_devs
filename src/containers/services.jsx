@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import { Element } from "react-scroll";
-
+import { useTranslation } from "react-i18next";
 import { FaAndroid, FaReact } from "react-icons/fa";
 import {
   MdDesignServices,
@@ -10,13 +10,6 @@ import {
 
 import ServicesCard from "../components/service_card";
 import TitleSection from "../components/title_section";
-
-import {
-  cardAndroidDevText,
-  cardReactDevText,
-  cardDesignDevText,
-  cardMaintenanceDevText,
-} from "../data/services_card_text.js";
 
 const ServicesContainer = tw(Element)`
    container
@@ -42,34 +35,36 @@ const CardContainer = tw.div`
 `;
 
 function ServicesSection() {
+  const { t } = useTranslation();
+
   return (
     <ServicesContainer name="Services">
-      <TitleSection title="Our Services" />
+      <TitleSection title={t("services.title")} />
       <CardContainer>
         <ServicesCard
-          title={cardAndroidDevText.title}
-          text={cardAndroidDevText.text}
+          title={t("services.cardAndroidTitle")}
+          text={t("services.cardAndroidText")}
         >
           <FaAndroid size="5rem" color="#84cc16" />
         </ServicesCard>
 
         <ServicesCard
-          title={cardReactDevText.title}
-          text={cardReactDevText.text}
+          title={t("services.cardReactTitle")}
+          text={t("services.cardReactText")}
         >
           <FaReact size="5rem" color="#0ea5e9" />
         </ServicesCard>
 
         <ServicesCard
-          title={cardDesignDevText.title}
-          text={cardDesignDevText.text}
+          title={t("services.cardDesignTitle")}
+          text={t("services.cardDesignText")}
         >
           <MdDesignServices size="5rem" color="#8b5cf6" />
         </ServicesCard>
 
         <ServicesCard
-          title={cardMaintenanceDevText.title}
-          text={cardMaintenanceDevText.text}
+          title={t("services.cardMaintenanceTitle")}
+          text={t("services.cardMaintenanceText")}
         >
           <MdOutlineMiscellaneousServices size="5rem" color="#14b8a6" />
         </ServicesCard>

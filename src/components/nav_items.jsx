@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 import tw from "twin.macro";
 import { slide as Menu } from "react-burger-menu";
 
+import { useTranslation } from "react-i18next";
+
 const menuStyles = {
   bmBurgerButton: {
     position: "absolute",
@@ -90,8 +92,14 @@ const NavItem = tw.li`
     box-content
 `;
 
+const lngs = {
+  en: { nativeName: "English" },
+  hr: { nativeName: "Hrvatski" },
+};
+
 function NavItems() {
   const [menuOpenState, setMenuOpenState] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile });
 
@@ -111,7 +119,7 @@ function NavItems() {
           offset={-70}
           duration={500}
         >
-          Home
+          {t("nav.home")}
         </Link>
       </NavItem>
       <NavItem>
@@ -124,7 +132,7 @@ function NavItems() {
           duration={1500}
           offset={-70}
         >
-          Services
+          {t("nav.services")}
         </Link>
       </NavItem>
       <NavItem>
@@ -137,7 +145,7 @@ function NavItems() {
           duration={1500}
           offset={-70}
         >
-          About Us
+          {t("nav.about")}
         </Link>
       </NavItem>
       <NavItem>
@@ -150,7 +158,7 @@ function NavItems() {
           duration={1500}
           offset={-70}
         >
-          Projects
+          {t("nav.projects")}
         </Link>
       </NavItem>
       <NavItem>
@@ -163,8 +171,22 @@ function NavItems() {
           duration={1500}
           offset={-70}
         >
-          Contact
+          {t("nav.contact")}
         </Link>
+      </NavItem>
+      <NavItem>
+        {Object.keys(lngs).map((lng) => (
+          <button
+            key={lng}
+            style={{
+              fontWeight: i18n.resolvedLanguage === lng ? "bold" : "normal",
+            }}
+            type="submit"
+            onClick={() => i18n.changeLanguage(lng)}
+          >
+            {lngs[lng].nativeName}
+          </button>
+        ))}
       </NavItem>
     </NavItemsWrapper>
   );

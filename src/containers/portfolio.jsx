@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import TitleSection from "../components/title_section";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 import radio_tg_img from "../assets/img_portfolio_rtg.jpg";
 import radio_tg_app_img from "../assets/img_portfolio_rtg_app.jpg";
@@ -73,10 +74,12 @@ const navigateToPlayStoreRTG = () =>
     "https://play.google.com/store/apps/details?id=com.milictg.radiotg");
 
 function Portfolio() {
+  const { t } = useTranslation();
+
   return (
     <PortfolioContainer name="Projects">
       <PortfolioContent>
-        <TitleSection title="Our Work" />
+        <TitleSection title={t("work.title")} />
 
         <PortfolioCardsWrapper>
           <PortfolioCardWrapper>
@@ -89,7 +92,7 @@ function Portfolio() {
               />
             </PortfolioCard>
             <PortfolioProjectTitle>
-              Radio Tomislavgrad Website
+              {t("work.projectOne")}
             </PortfolioProjectTitle>
           </PortfolioCardWrapper>
 
@@ -103,7 +106,7 @@ function Portfolio() {
               />
             </PortfolioCard>
             <PortfolioProjectTitle>
-              Radio Tomislavgrad Android Application
+              {t("work.projectTwo")}
             </PortfolioProjectTitle>
           </PortfolioCardWrapper>
 
@@ -117,7 +120,7 @@ function Portfolio() {
               />
             </PortfolioCard>
             <PortfolioProjectTitle>
-              Êléktra Android Application - "In development"
+              {t("work.projectThree")}
             </PortfolioProjectTitle>
           </PortfolioCardWrapper>
         </PortfolioCardsWrapper>

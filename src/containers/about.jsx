@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import TitleSectionSecondary from "../components/title_section_secondary";
 import { Element } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 import aboutSvg from "../assets/svg_about.svg";
 
@@ -42,12 +43,13 @@ const AboutUsTextContainer = tw.div`
 `;
 
 const AboutUsText = tw.h4`
-   py-4
-   text-base
-   text-center
-   tracking-wider
-   text-white
-   md:text-left	
+  whitespace-pre-wrap
+  py-4
+  text-base
+  text-center
+  tracking-wider
+  text-white
+  md:text-left	
 `;
 
 const AboutUsSvg = tw.div`
@@ -57,28 +59,15 @@ const AboutUsSvg = tw.div`
 `;
 
 function AboutUs() {
+  const { t } = useTranslation();
+
   return (
     <AboutUsContainer name="About">
       <AboutUsContentWrapper>
-        <TitleSectionSecondary title="About Us" />
+        <TitleSectionSecondary title={t("about.title")} />
         <AboutUsContentContainer>
           <AboutUsTextContainer>
-            <AboutUsText>
-              We are a team of professional's based in Europe. We've been living
-              and breathing mobile since 2018.
-            </AboutUsText>
-            <AboutUsText>
-              We pride ourselves on our excellent customer service. You will not
-              walk the path to mobile success alone. We are here for you,
-              guiding you along the way and offering our vast expertise starting
-              from sketching an idea with pen and paper to implementing the best
-              solution and celebrating success with you.
-            </AboutUsText>
-            <AboutUsText>
-              In short, we are the kind of team who likes to focus on results,
-              such as best user experience, engagement, user satisfaction,
-              retention, and scalability.
-            </AboutUsText>
+            <AboutUsText>{t("about.text")}</AboutUsText>
           </AboutUsTextContainer>
           <AboutUsSvg>
             <img style={{ height: "100%" }} src={aboutSvg} alt="Service" />

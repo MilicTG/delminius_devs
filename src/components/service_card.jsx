@@ -29,7 +29,8 @@ const CardTitle = tw.h5`
 
 const CardText = tw.p`
    text-gray-700
-   text-center
+   whitespace-pre-wrap
+   text-left
    px-4
    pt-2
    pb-4
