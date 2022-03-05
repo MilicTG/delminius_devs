@@ -22,8 +22,7 @@ i18n
             contact: "Contact",
           },
           landing: {
-            title:
-              "DelminiusDevs - \nandroid mobile and web development agency",
+            title: "DelminiusDevs - \nandroid and web development agency",
             buttonOne: "Contact Us",
             buttonTwo: "Our Work",
           },
@@ -31,20 +30,20 @@ i18n
             title: "Our Services",
             cardAndroidTitle: "Android Development",
             cardAndroidText:
-              "In today’s technological age on the go, mobile apps are a handy tool to attract new users and thus improve your business.\n\n Mobile devices are the most easily accessible source of information and are the tool with the highest level of interactivity with the user.\n\nWe offer from simple to advanced solutions for all mobile Android devices.",
+              "We aim to deliver the utmost quality Android apps. Our offer consists of a simple and advanced application for all android devices.\n\nIn Century which we live in demands adjustment to trends and speed in a business world. With us, You get convenience with the application which we make for you to grow your business exponentially.",
             cardReactTitle: "Web Development",
             cardReactText:
-              "If you think that before deciding to go on the trip or before concluding a contract with a company, it is good to find out as much information as possible in your search engine,you will enter terms that will help you find what interests you. \n\nWhether you have your own company or not, don't let it happen that you are left 'without results' and out of new technological possibilities. We are an agency that will create a website for you and thus take the first step in opening a new business environment.",
+              "Introduce new products & services or promote existing ones, improve brand identity & top of mind awareness or capture leads to enhance marketing efforts. These are just some of the many things that You can achieve with a great website.\n\nIf you have your own business it will be good for you if you have a website where your potential clients can get all the necessary information that they needed.\n\nWe will make the website and your user will find out very quickly all they want to know. In this way, you will save your precious time.",
             cardDesignTitle: "UI/UX Design",
             cardDesignText:
-              "UI design is what you see when you enter an app or website. We will try to make your idea come true when creating it. So it would be good to always think about what you want us to do.\n\n UX design means the functionality of your website or application. When we make a nice UI design it would be good to have a functional UX design as well.",
+              "User interfaces must feel natural without many distractions or the users will get frustrated and leave your application or website altogether.\n\nA greater part of our design philosophy involves cutting the clutter to attain the simplest form of user experience.",
             cardMaintenanceTitle: "Maintance",
             cardMaintenanceText:
               "The moment you are satisfied with the work done,  your website and your application are ready for publishing. We are here if you decide to take care of their maintenance. Feel free to contact us if a problem arises and we will do our best to resolve it.",
           },
           about: {
             title: "About Us",
-            text: "We are a team of professional's based in Europe. We've been livingand breathing mobile since 2018.\n\nWe pride ourselves on our excellent customer service. You will not walk the path to mobile success alone. We are here for you, guiding you along the way and offering our vast expertise starting from sketching an idea with pen and paper to implementing the best solution and celebrating success with you.\n\nIn short, we are the kind of team who likes to focus on results, such as best user experience, engagement, user satisfaction, retention, and scalability.",
+            text: "We are a team of professionals based in Europe. We've been living and breathing mobile since 2018. We pride ourselves on our excellent customer service.\n\nYou will not walk the path to mobile success alone. We are here for you, guiding you along the way and offering our vast expertise starting from sketching an idea with pen and paper to implementing the best solution and celebrating success with you.\n\nIn short, we are the kind of team that likes to focus on results, such as best user experience, engagement, user satisfaction, retention, and scalability.Ever thought of having a mobile app or website for your business? It is not as difficult as it seems to be.\n\nWith the right kind of positive attitude and team cooperation, we can build tailor-made websites, reflecting a polished image of our clients and their services to a worldwide audience.We have all that you need, in one single place. Do not hesitate in contacting us. We see a partnership as a long-term relationship rather than just another business deal.",
           },
           work: {
             title: "Our Work",
@@ -92,20 +91,20 @@ i18n
             title: "Naše usluge",
             cardAndroidTitle: "Android programiranje",
             cardAndroidText:
-              "Android programiranjem nastojimo odgovoriti  zahtjevima koji se stavljaju pred nas. Nudimo jednostavne i napredne aplikacije za sve android uređaje.\n\nStoljeće u kojem živimo zahtjeva prilagodbu trendovima i u poslovnom svijetu. Zgodno je kada klikom na aplikaciju obaviš dobar dio posla. ",
+              "Cilj nam je isporučiti najkvalitetnije Android aplikacije. Naša ponuda sastoji se od jednostavnih i naprednih aplikacija za sve android uređaje.\n\nStoljeće u kojem živimo zahtijeva prilagodbu trendovima i brzini u poslovnom svijetu. Uz nas, dobivate praktičnost s aplikacijom koju radimo za Vas i eksponencijalni rast vašeg poslovanja.",
             cardReactTitle: "Web programiranje",
             cardReactText:
-              "Postojanje mrežnih stranica danas se podrazumijeva. Ukoliko imaš vlastitu tvrtku bilo bi dobro da imaš web stranicu kako bi potencijalni klijenti dobili informacije koje su im potrebne.\n\nNaš tim će napraviti web stranicu i tvoji korisnici će vrlo lako saznati sve što ih zanima. Tako ćemo svima uštedjeti dragocjeno vrijeme. ",
+              "Uvesti nove proizvode i usluge ili promovirati postojeće, poboljšati identitet robne marke i svijest ili uhvatiti trendove za poboljšanje marketinških napora. Ovo su samo neke od mnogih stvari koje možete postići sjajnom web-stranicom.\n\nAko imate vlastitu tvrtku, za Vas će biti dobro ako imate web stranicu na kojoj vaši potencijalni klijenti mogu dobiti sve potrebne informacije koje su im potrebne .\n\nNapravit ćemo web stranicu za Vas i vaš će korisnik vrlo brzo saznati sve što želi znati. Na taj način ćete uštedjeti svoje dragocjeno vrijeme.",
             cardDesignTitle: "UI/UX Dizajn",
             cardDesignText:
-              "UI dizajn je ono što vidiš kada uđeš u aplikaciju ili web stranicu. Nastojat ćemo da pri njegovoj izradi ostvarimo tvoju zamisao. Zato bi bilo dobro da uvijek razmisliš o onome što želiš da napravimo.\n\nUX dizajn označuje funkcionalnost tvoje web stranice, odnosno aplikacije. Kada napravimo lijep UI dizajn bili bi dobro da imamo i funkcionalan UX dizajn.",
+              "Korisnička sučelja moraju izgledati prirodno bez mnogo ometanja ili će korisnici biti frustrirati i potpuno napustiti vašu aplikaciju ili web stranicu.\n\nVeći dio naše filozofije dizajna uključuje smanjenje nereda kako bi se postigao najjednostavniji oblik korisničkog iskustva.",
             cardMaintenanceTitle: "Održavanje",
             cardMaintenanceText:
               "Onoga trenutka kada budeš zadovoljan napravljenim poslom, tj. svojom web stranicom i aplikacijom pristupit ćemo njihovom objavljivanju i tada možeš reći da su javno dostupne.\n\nTu smo ukoliko se odlučiš da se brinemo i za njihovo održavanje. Možeš nam se slobodno obratiti ako nastane problem i mi ćemo se potruditi riješiti ga.",
           },
           about: {
             title: "O nama",
-            text: "Mladi smo tim i start up čiji je cilj rasti. Osluškujući tržišne potrebe shvatili smo da danas poslovanje treba biti lakše, otvorenije i bolje.\n\nIzrađujemo web i mobilne android aplikacije i na takav način predstavljamo ono čime se baviš javnosti i pomažemo ti u organizaciji poslovanja i života.",
+            text: "Mi smo tim profesionalaca sa sjedištem u Europi. Živimo i dišemo mobilno od 2018. Ponosimo se izvrsnom uslugom za korisnike.\n\n Na svom putu do mobilnog uspjeha nećete sami ići. Mi smo tu za vas, vodimo vas na tom putu i nudimo našu ogromnu stručnost počevši od skiciranja ideje olovkom i papirom do implementacije najboljeg rješenja i slavljenja uspjeha s vama.\n\nUkratko, mi smo tim koji se voli fokusirati na rezultate, kao što su najbolje korisničko iskustvo, angažman, zadovoljstvo korisnika, zadržavanje i skalabilnost.\n\nJeste li ikada razmišljali o tome da imate mobilnu aplikaciju ili web stranicu za svoju tvrtku? Nije tako teško kao što se čini.\n\nS pravom vrstom pozitivnog stava i timskom suradnjom, možemo izgraditi web stranice po mjeri, koje odražavaju uglađenu sliku naših klijenata i njihovih usluga publici širom svijeta. Imamo sve što vam treba, na jednom mjestu.\n\nNe ustručavajte se kontaktirati nas. Partnerstvo vidimo kao dugoročnu vezu, a ne samo kao još jedan poslovni dogovor.",
           },
           work: {
             title: "Naši projekti",
