@@ -43,7 +43,7 @@ i18n
           },
           about: {
             title: "About Us",
-            text: "We are a team of professionals based in Europe. We've been living and breathing mobile since 2018. We pride ourselves on our excellent customer service.\n\nYou will not walk the path to mobile success alone. We are here for you, guiding you along the way and offering our vast expertise starting from sketching an idea with pen and paper to implementing the best solution and celebrating success with you.\n\nIn short, we are the kind of team that likes to focus on results, such as best user experience, engagement, user satisfaction, retention, and scalability.Ever thought of having a mobile app or website for your business? It is not as difficult as it seems to be.\n\nWith the right kind of positive attitude and team cooperation, we can build tailor-made websites, reflecting a polished image of our clients and their services to a worldwide audience.We have all that you need, in one single place. Do not hesitate in contacting us. We see a partnership as a long-term relationship rather than just another business deal.",
+            text: "Ever thought of having a mobile app or website for your business? It is not as difficult as it seems to be.\n\nWith the right kind of positive attitude and team cooperation, we can build tailor-made websites, reflecting a polished image of our clients and their services to a worldwide audience. We have all that you need in one single place. You will not walk the path to mobile success alone. We are here for you, guiding you along the way and offering our vast expertise starting from sketching an idea with pen and paper to implementing the best solution and celebrating success with you.\n\nIn short, we are the kind of team that likes to focus on results, such as best user experience, engagement, user satisfaction, retention, and scalability. Do not hesitate in contacting us. We see a partnership as a long-term relationship rather than just another business deal.",
           },
           work: {
             title: "Our Work",
@@ -56,7 +56,7 @@ i18n
             first: "First name",
             last: "Last name",
             email: "E-mail",
-            phone: "Phone or Skype ID",
+            phone: "Phone",
             message: "Enter your message here",
             send: "Send",
           },
@@ -91,20 +91,20 @@ i18n
             title: "Naše usluge",
             cardAndroidTitle: "Android programiranje",
             cardAndroidText:
-              "Cilj nam je isporučiti najkvalitetnije Android aplikacije. Naša ponuda sastoji se od jednostavnih i naprednih aplikacija za sve android uređaje.\n\nStoljeće u kojem živimo zahtijeva prilagodbu trendovima i brzini u poslovnom svijetu. Uz nas, dobivate praktičnost s aplikacijom koju radimo za Vas i eksponencijalni rast vašeg poslovanja.",
+              "Cilj nam je praviti najkvalitetnije Android aplikacije. Naša ponuda sastoji se od jednostavnih i naprednih aplikacija za sve android uređaje.\n\nStoljeće u kojem živimo zahtijeva prilagodbu trendovima i brzini u poslovnom svijetu. Uz nas dobivate praktičnost s aplikacijom koju radimo za vas i olakšani rad vašeg poslovanja.",
             cardReactTitle: "Web programiranje",
             cardReactText:
-              "Uvesti nove proizvode i usluge ili promovirati postojeće, poboljšati identitet robne marke i svijest ili uhvatiti trendove za poboljšanje marketinških napora. Ovo su samo neke od mnogih stvari koje možete postići sjajnom web-stranicom.\n\nAko imate vlastitu tvrtku, za Vas će biti dobro ako imate web stranicu na kojoj vaši potencijalni klijenti mogu dobiti sve potrebne informacije koje su im potrebne .\n\nNapravit ćemo web stranicu za Vas i vaš će korisnik vrlo brzo saznati sve što želi znati. Na taj način ćete uštedjeti svoje dragocjeno vrijeme.",
+              "Uvesti nove proizvode i usluge ili promovirati postojeće ili poboljšati identitet vaše tvrtke. Ovo su samo neke od mnogih stvari koje možete postići sjajnom web stranicom. Ako imate vlastitu tvrtku za vas će biti dobro ako imate web stranicu na kojoj vaši potencijalni klijenti mogu dobiti sve potrebne informacije koje su im potrebne.\n\nPostojanje mrežnih stranica danas se podrazumijeva. Obratite se nama i za vas ćemo napraviti modernu i funkcionalnu web stranicu.",
             cardDesignTitle: "UI/UX Dizajn",
             cardDesignText:
-              "Korisnička sučelja moraju izgledati prirodno bez mnogo ometanja ili će korisnici biti frustrirati i potpuno napustiti vašu aplikaciju ili web stranicu.\n\nVeći dio naše filozofije dizajna uključuje smanjenje nereda kako bi se postigao najjednostavniji oblik korisničkog iskustva.",
+              "Korisničko sučelja moraju izgledati prirodno bez mnogo ometanja ili će korisnici biti nezadovoljni i u potpunosti napustiti vašu aplikaciju ili web stranicu. Veći dio naše filozofije dizajna uključuje smanjenje nereda kako bi se postigao što jednostavniji i lakši oblik korisničkog iskustva.",
             cardMaintenanceTitle: "Održavanje",
             cardMaintenanceText:
               "Onoga trenutka kada budeš zadovoljan napravljenim poslom, tj. svojom web stranicom i aplikacijom pristupit ćemo njihovom objavljivanju i tada možeš reći da su javno dostupne.\n\nTu smo ukoliko se odlučiš da se brinemo i za njihovo održavanje. Možeš nam se slobodno obratiti ako nastane problem i mi ćemo se potruditi riješiti ga.",
           },
           about: {
             title: "O nama",
-            text: "Mi smo tim profesionalaca sa sjedištem u Europi. Živimo i dišemo mobilno od 2018. Ponosimo se izvrsnom uslugom za korisnike.\n\n Na svom putu do mobilnog uspjeha nećete sami ići. Mi smo tu za vas, vodimo vas na tom putu i nudimo našu ogromnu stručnost počevši od skiciranja ideje olovkom i papirom do implementacije najboljeg rješenja i slavljenja uspjeha s vama.\n\nUkratko, mi smo tim koji se voli fokusirati na rezultate, kao što su najbolje korisničko iskustvo, angažman, zadovoljstvo korisnika, zadržavanje i skalabilnost.\n\nJeste li ikada razmišljali o tome da imate mobilnu aplikaciju ili web stranicu za svoju tvrtku? Nije tako teško kao što se čini.\n\nS pravom vrstom pozitivnog stava i timskom suradnjom, možemo izgraditi web stranice po mjeri, koje odražavaju uglađenu sliku naših klijenata i njihovih usluga publici širom svijeta. Imamo sve što vam treba, na jednom mjestu.\n\nNe ustručavajte se kontaktirati nas. Partnerstvo vidimo kao dugoročnu vezu, a ne samo kao još jedan poslovni dogovor.",
+            text: "Jeste li ikada razmišljali o tome da imate mobilnu aplikaciju ili web stranicu za svoju tvrtku? Nije tako teško kao što se čini. S pravom vrstom pozitivnog stava i timskom suradnjom možemo izgraditi web stranicu ili aplikaciju po mjeri, koje odražavaju uglađenu sliku naših klijenata i njihovih usluga publici širom svijeta. Imamo sve što vam treba na jednom mjestu.\n\nNa svom putu do mobilnog uspjeha nećete biti sami. Mi smo tu za vas, vodit ćemo vas na tom putu i nuditi našu ogromnu stručnost počevši od skiciranja ideje do implementacije najboljeg rješenja. Ukratko, mi smo tim koji se voli fokusirati na rezultate kao što su najbolje korisničko iskustvo, angažman, zadovoljstvo korisnika, zadržavanje i skalabilnost. Ne ustručavajte se kontaktirati nas. Partnerstvo vidimo kao dugoročnu vezu, a ne samo kao još jedan poslovni dogovor.",
           },
           work: {
             title: "Naši projekti",
@@ -117,7 +117,7 @@ i18n
             first: "Vaše ime",
             last: "Vaše prezime",
             email: "E-mail",
-            phone: "Telefon ili Skype ID",
+            phone: "Telefon",
             message: "Unesite vašu poruku ovdje",
             send: "Pošalji",
           },

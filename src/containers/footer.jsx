@@ -203,7 +203,9 @@ function Footer() {
       </FooterNavItems>
 
       <FooterContactContainer>
-        <FooterContactAndSocialTitle>Our Office</FooterContactAndSocialTitle>
+        <FooterContactAndSocialTitle>
+          {t("footer.office")}
+        </FooterContactAndSocialTitle>
 
         <ContactItems>
           <ContactItem>{t("footer.adress")}</ContactItem>
