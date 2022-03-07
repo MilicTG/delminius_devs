@@ -91,20 +91,20 @@ i18n
             title: "Naše usluge",
             cardAndroidTitle: "Android programiranje",
             cardAndroidText:
-              "Cilj nam je praviti najkvalitetnije Android aplikacije. Naša ponuda sastoji se od jednostavnih i naprednih aplikacija za sve android uređaje.\n\nStoljeće u kojem živimo zahtijeva prilagodbu trendovima i brzini u poslovnom svijetu. Uz nas dobivate praktičnost s aplikacijom koju radimo za vas i olakšani rad vašeg poslovanja.",
+              "Cilj nam je stvarati najkvalitetnije android aplikacije. Naša ponuda sastoji se od jednostavnih i naprednih aplikacija za sve android uređaje.\n\nStoljeće u kojem živimo zahtijeva prilagodbu trendovima i brzini u poslovnom svijetu. Uz nas dobivate praktičnost i lakoću u poslovanju.",
             cardReactTitle: "Web programiranje",
             cardReactText:
-              "Uvesti nove proizvode i usluge ili promovirati postojeće ili poboljšati identitet vaše tvrtke. Ovo su samo neke od mnogih stvari koje možete postići sjajnom web stranicom. Ako imate vlastitu tvrtku za vas će biti dobro ako imate web stranicu na kojoj vaši potencijalni klijenti mogu dobiti sve potrebne informacije koje su im potrebne.\n\nPostojanje mrežnih stranica danas se podrazumijeva. Obratite se nama i za vas ćemo napraviti modernu i funkcionalnu web stranicu.",
+              "Uvođenje novih proizvoda i usluga, promoviranje postojećih ili poboljšanje identiteta vaše tvrtke samo su neke od mnogih prednosti koje možete postići sjajnom web stranicom.\n\nAko imate vlastitu tvrtku bit će dobro da imate i web stranicu na kojoj će vaši potencijalni klijenti dobiti sve potrebne informacije. Naš je zadatak izraditi modernu i funkcionalnu web stranicu po vašim željama.",
             cardDesignTitle: "UI/UX Dizajn",
             cardDesignText:
-              "Korisničko sučelja moraju izgledati prirodno bez mnogo ometanja ili će korisnici biti nezadovoljni i u potpunosti napustiti vašu aplikaciju ili web stranicu. Veći dio naše filozofije dizajna uključuje smanjenje nereda kako bi se postigao što jednostavniji i lakši oblik korisničkog iskustva.",
+              "Kako bi u potpunosti bili zadovoljni svojom aplikacijom ili web stranicom napravit ćemo kvalitetno korisničko sučelje. Cilj nam je da imate što jednostavnije i lakše korisničko iskustvo sa što manje nepotrebnih stvari.",
             cardMaintenanceTitle: "Održavanje",
             cardMaintenanceText:
-              "Onoga trenutka kada budeš zadovoljan napravljenim poslom, tj. svojom web stranicom i aplikacijom pristupit ćemo njihovom objavljivanju i tada možeš reći da su javno dostupne.\n\nTu smo ukoliko se odlučiš da se brinemo i za njihovo održavanje. Možeš nam se slobodno obratiti ako nastane problem i mi ćemo se potruditi riješiti ga.",
+              "Onoga trenutka kada budete zadovoljni napravljenim poslom, tj. svojom web stranicom i aplikacijom pristupit ćemo njihovom objavljivanju i tada možete reći da su javno dostupne.\n\nTu smo ukoliko se odlučite da se brinemo i za njihovo održavanje. Možete nam se slobodno obratiti ako nastane problem i mi ćemo se potruditi riješiti ga.",
           },
           about: {
             title: "O nama",
-            text: "Jeste li ikada razmišljali o tome da imate mobilnu aplikaciju ili web stranicu za svoju tvrtku? Nije tako teško kao što se čini. S pravom vrstom pozitivnog stava i timskom suradnjom možemo izgraditi web stranicu ili aplikaciju po mjeri, koje odražavaju uglađenu sliku naših klijenata i njihovih usluga publici širom svijeta. Imamo sve što vam treba na jednom mjestu.\n\nNa svom putu do mobilnog uspjeha nećete biti sami. Mi smo tu za vas, vodit ćemo vas na tom putu i nuditi našu ogromnu stručnost počevši od skiciranja ideje do implementacije najboljeg rješenja. Ukratko, mi smo tim koji se voli fokusirati na rezultate kao što su najbolje korisničko iskustvo, angažman, zadovoljstvo korisnika, zadržavanje i skalabilnost. Ne ustručavajte se kontaktirati nas. Partnerstvo vidimo kao dugoročnu vezu, a ne samo kao još jedan poslovni dogovor.",
+            text: "Jeste li ikada razmišljali o tome da imate mobilnu aplikaciju ili web stranicu za svoju tvrtku? Nije tako teško kao što se možda čini. S pravom vrstom pozitivnoga stava i timskom suradnjom možemo izgraditi web stranicu ili aplikaciju po vašoj mjeri. Mi imamo sve što će vam trebati. Na svom putu uspjeha nećete biti sami.\n\nBit ćemo na tom putu i nuditi vam pomoć od skiciranja ideje do implementacije najboljega rješenja. Naš fokus bit će na tome da imate najbolje korisničko iskustvo, da budete zadovoljni i da vas zadržimo. Budite slobodni kontaktirati nas. Partnerstvo je za nas dugoročna veza, a ne samo još jedan poslovni dogovor. ",
           },
           work: {
             title: "Naši projekti",
