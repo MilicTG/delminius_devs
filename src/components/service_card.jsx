@@ -8,7 +8,7 @@ const CardContainer = tw.div`
    flex
    flex-col
    items-center
-   bg-blue-50
+   bg-white
    rounded-md
    shadow-lg
 `;

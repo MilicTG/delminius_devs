@@ -18,8 +18,8 @@ function App() {
     <AppContainer>
       <NavBar />
       <Landing />
-      <ServicesSection />
       <AboutUs />
+      <ServicesSection />
       <Portfolio />
       <ContactUs />
       <Footer />

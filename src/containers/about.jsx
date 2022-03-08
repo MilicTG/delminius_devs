@@ -1,16 +1,15 @@
 import React from "react";
 import tw from "twin.macro";
-import TitleSectionSecondary from "../components/title_section_secondary";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
 import aboutSvg from "../assets/svg_about.svg";
+import TitleSection from "../components/title_section";
 
 const AboutUsContainer = tw(Element)`
    w-full
    my-2
    px-4
-   bg-primary_blue-100
    flex
    justify-center
    items-center
@@ -48,7 +47,7 @@ const AboutUsText = tw.h4`
   text-base
   text-center
   tracking-wider
-  text-white
+  text-gray-700
   md:text-left	
 `;
 
@@ -64,7 +63,7 @@ function AboutUs() {
   return (
     <AboutUsContainer name="About">
       <AboutUsContentWrapper>
-        <TitleSectionSecondary title={t("about.title")} />
+        <TitleSection title={t("about.title")} />
         <AboutUsContentContainer>
           <AboutUsTextContainer>
             <AboutUsText>{t("about.text")}</AboutUsText>

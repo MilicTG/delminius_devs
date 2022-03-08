@@ -189,10 +189,10 @@ function Footer() {
           <Link to="Home">{t("nav.home")}</Link>
         </FooterNavItem>
         <FooterNavItem>
-          <Link to="Services">{t("nav.services")}</Link>
+          <Link to="About">{t("nav.about")}</Link>
         </FooterNavItem>
         <FooterNavItem>
-          <Link to="About">{t("nav.about")}</Link>
+          <Link to="Services">{t("nav.services")}</Link>
         </FooterNavItem>
         <FooterNavItem>
           <Link to="Projects">{t("nav.projects")}</Link>

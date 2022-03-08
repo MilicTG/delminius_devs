@@ -133,19 +133,6 @@ function NavItems() {
       <NavItem>
         <Link
           onClick={() => handleMenuOpenState(false)}
-          to="Services"
-          activeClass="active"
-          spy={true}
-          smooth={"easeInOutQuad"}
-          duration={1500}
-          offset={-70}
-        >
-          {t("nav.services")}
-        </Link>
-      </NavItem>
-      <NavItem>
-        <Link
-          onClick={() => handleMenuOpenState(false)}
           to="About"
           activeClass="active"
           spy={true}
@@ -154,6 +141,19 @@ function NavItems() {
           offset={-70}
         >
           {t("nav.about")}
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link
+          onClick={() => handleMenuOpenState(false)}
+          to="Services"
+          activeClass="active"
+          spy={true}
+          smooth={"easeInOutQuad"}
+          duration={1500}
+          offset={-70}
+        >
+          {t("nav.services")}
         </Link>
       </NavItem>
       <NavItem>
