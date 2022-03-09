@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         primary_red: {
           100: "#FF5B5B",
+          200: "#ff3333",
         },
         primary_blue: {
           100: "#00B0CC",
