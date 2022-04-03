@@ -22,7 +22,7 @@ i18n
             contact: "Contact",
           },
           landing: {
-            title: "DelminiusDevs - \native android development start-up",
+            title: "DelminiusDevs - \n Native android development agency",
             buttonOne: "Contact us",
             buttonTwo: "Our work",
           },
@@ -83,7 +83,7 @@ i18n
           },
           landing: {
             title:
-              "DelminiusDevs - \nstart-up za razvoj nativnih android aplikacija",
+              "DelminiusDevs - \nagencija za razvoj nativnih android aplikacija",
             buttonOne: "Kontaktirajte nas",
             buttonTwo: "Naši projekti",
           },
